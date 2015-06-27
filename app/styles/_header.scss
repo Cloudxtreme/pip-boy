@@ -1,0 +1,55 @@
+.main-menu {
+  border-bottom: 2px solid $brand-primary;
+  padding: 2em 0 0;
+  text-align: center;
+
+  ul {
+    margin: 0;
+  }
+
+  a,
+  a:focus {
+    background-color: $brand-dark;
+    color: $brand-primary;
+    padding: 0 0.25em;
+    position: relative;
+    z-index: 3;
+    text-decoration: none;
+    transition: all 0.10s ease;
+
+    &:hover {
+      text-shadow: 0 0 6px $brand-accent;
+      text-decoration: none;
+    }
+  }
+
+  li {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0 0.5em;
+    position: relative;
+    text-shadow: 0 0 2px $brand-accent;
+    z-index: 3;
+  }
+
+  .active {
+    background-color: $brand-dark;
+
+    &:after {
+      content: "";
+      background-color: $brand-dark;
+      border: 2px solid $brand-primary;
+      position: absolute; top: 45%; left: -5%;
+      width: 110%; height: 100%;
+      z-index: 1;
+    }
+
+    &:before {
+      content: "";
+      background-color: $brand-dark;
+      position: absolute; top: 105%; left: -10%;
+      width: 120%; height: 2em;
+      z-index: 5;
+    }
+  }
+}

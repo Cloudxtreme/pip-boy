@@ -1,0 +1,18 @@
+section.main {
+  padding: 3em 0 1em;
+}
+
+.stats {
+  margin: 1em 0 0.75em;
+  .green-box {
+    height: 3em;
+
+    &.a {
+      width: 2em;
+    }
+
+    &.b {
+      width: 3em;
+    }
+  }
+}

@@ -2,7 +2,7 @@ doctype html
 html.no-js
   head
     meta(charset='utf-8')
-    title Single Page Website Template
+    title Pip-Boy 3000 Mk IV
     meta(name='description' content='Standard template for making a static website. Utilizes Bootstrap, Jade and Gulp.')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     // Place favicon.ico and apple-touch-icon.png in the root directory
@@ -24,12 +24,13 @@ html.no-js
     | <!--[if lt IE 10]>
     |   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     | <![endif]-->
+    
 
-    include ../includes/header.jade
+    .container-fluid
+      include ../includes/header.jade
+      block content
+      include ../includes/footer.jade
 
-    block content
-
-    include ../includes/footer.jade
 
   // Google Analytics: change UA-XXXXX-X to be your site's ID.
   //- script.
